@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Code for the Settings feature.
+ */
+
+include_once 'jb_base.features.inc';
+
+// Custom includes
+include_once 'includes/node.inc';
+include_once 'includes/wysiwyg.inc';
+
+/**
+ * Implements hook_admin_paths().
+ *
+ * Force IMCE to be an admin path.
+ */
+function jb_base_admin_paths() {
+  return array(
+    'imce' => TRUE,
+  );
+}
